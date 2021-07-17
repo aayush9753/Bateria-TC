@@ -1,0 +1,4 @@
+https://www.kaggle.com/thomasnelson/working-with-dna-sequence-data-for-ml
+https://github.com/nageshsinghc4/DNA-Sequence-Machine-learning/blob/master/DNA_sequence_classification.py
+https://medium.com/mlearning-ai/apply-machine-learning-algorithms-for-genomics-data-classification-132972933723#197c
+https://github.com/jerryji1993/DNABERT
