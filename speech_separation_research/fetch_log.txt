@@ -1,0 +1,40 @@
+# Web Fetch Log
+# Target Speaker Extraction Research Project
+# Started: 2026-04-05
+
+## URLs Queried
+
+### Semantic Scholar / ArXiv Searches
+- https://api.semanticscholar.org/graph/v1/paper/search?query=target+speaker+extraction&fields=title,year,authors,abstract,citationCount,externalIds&limit=20
+- https://api.semanticscholar.org/graph/v1/paper/search?query=informed+source+separation+speaker&fields=title,year,authors,abstract,citationCount&limit=20
+- https://api.semanticscholar.org/graph/v1/paper/search?query=personalized+speech+extraction&fields=title,year,authors,abstract,citationCount&limit=20
+- https://api.semanticscholar.org/graph/v1/paper/search?query=VoiceFilter+speech+separation&fields=title,year,authors,abstract,citationCount&limit=20
+- https://api.semanticscholar.org/graph/v1/paper/search?query=reference-based+speech+separation&fields=title,year,authors,abstract,citationCount&limit=20
+- https://api.semanticscholar.org/graph/v1/paper/search?query=TTS+guided+speech+enhancement&fields=title,year,authors,abstract,citationCount&limit=20
+- https://api.semanticscholar.org/graph/v1/paper/search?query=SpEx+target+speaker+extraction&fields=title,year,authors,abstract,citationCount&limit=20
+- https://arxiv.org/search/?searchtype=all&query=target+speaker+extraction&start=0
+- https://arxiv.org/search/?searchtype=all&query=TTS+speech+enhancement+extraction&start=0
+- https://arxiv.org/search/?searchtype=all&query=multilingual+speech+separation&start=0
+
+### HuggingFace
+- https://huggingface.co/models?search=speaker+extraction
+- https://huggingface.co/models?search=speech+separation
+- https://huggingface.co/models?search=target+speaker
+- https://huggingface.co/models?search=voice+filter
+
+### GitHub API
+- https://api.github.com/search/repositories?q=target+speaker+extraction&sort=stars&order=desc
+- https://api.github.com/search/repositories?q=speech+separation+deep+learning&sort=stars&order=desc
+- https://api.github.com/search/repositories?q=SpEx+speaker+extraction&sort=stars&order=desc
+
+### Paper-Specific Pages
+- https://arxiv.org/abs/2004.14948  (SpEx+)
+- https://arxiv.org/abs/2010.12900  (VoiceFilter-Lite)
+- https://arxiv.org/abs/2110.05966  (SepFormer)
+- https://arxiv.org/abs/2209.03952  (TF-GridNet)
+- https://arxiv.org/abs/2211.00482  (Mamba-based separation)
+- https://arxiv.org/abs/2306.09712  (zero-shot voice cloning)
+
+## Status Notes
+- Background research agent launched 2026-04-05
+- All accessible URLs logged above; inaccessible URLs noted inline in literature_survey.md
