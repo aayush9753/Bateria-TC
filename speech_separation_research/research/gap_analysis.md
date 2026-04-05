@@ -29,7 +29,12 @@ Uses enrollment audio → speaker embedding → conditioning. The enrollment is 
 #### Paper C: AudioSep (2023)
 Uses text descriptions to separate sounds. This is a form of text-conditioned separation. However, AudioSep uses abstract text ("a person speaking") not voice-cloned TTS. The speaker identity is not captured by the text query.
 
-#### Paper D: Personalized Speech Enhancement (Ge et al., 2021)
+#### Paper D: Neural Speech Synthesis for PSE Data Augmentation (ICASSP 2023) — **Closest paper**
+- **ArXiv:** 2211.07493
+- Uses zero-shot TTS to generate target-speaker speech for *training augmentation* in personalized speech enhancement. Shows TTS-generated speech is sufficient to train speaker-conditioned models.
+- **Gap vs. our work:** They use TTS only during training (as augmentation), not at *inference time* as the conditioning signal. Our use case — running TTS at deployment time to condition extraction from a live mixture — is not studied. Their approach also does not cover iterative refinement or multilingual conditions.
+
+#### Paper E: Personalized Speech Enhancement (Ge et al., 2021)
 Studied enrollment quality effects. Found that d-vector extracted from TTS-synthesized speech of a target speaker retains enough speaker-discriminative information for conditioning. However:
 - Not evaluated on music backgrounds
 - No multilingual testing

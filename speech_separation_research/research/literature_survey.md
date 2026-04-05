@@ -230,6 +230,19 @@
 - **Method:** Asymmetric encoder-decoder: light encoder, heavy decoder for reconstruction. More computationally efficient than SepFormer.
 - **Code:** https://github.com/dmlguq456/SepReformer
 
+### Neural Speech Synthesis-Based Data Augmentation for PSE (ICASSP 2023) — HIGHLY RELEVANT
+- **Title:** Neural Speech Synthesis-Based Data Augmentation for Personalized Speech Enhancement
+- **ArXiv:** 2211.07493
+- **Method:** Uses zero-shot TTS to synthesize personalized speech as augmentation for personalized speech enhancement (PSE) training — reducing dependence on large real-speaker recordings.
+- **Key Finding:** TTS-generated speech for PSE training improves DNSMOS scores vs. baselines without TTS augmentation.
+- **Direct relevance:** This is the closest published work to our approach. Key difference: they use TTS for *training augmentation* only; we use TTS as the *runtime inference conditioning signal*.
+- **Limitations:** TTS quality bottlenecks gains; does not study TTS-as-enrollment at inference time; no multilingual evaluation.
+
+### Neural Speech Extraction with Human Feedback (2025)
+- **ArXiv:** 2508.03041
+- **Method:** Interactive TSE with user annotation on problematic output segments; lightweight corrector model refines outputs iteratively.
+- **Relevance to us:** Validates iterative correction loop concept; our TTS-guided refinement is an automated analog.
+
 ### GeCo (2024, INTERSPEECH 2024)
 - **Title:** Noise-Robust Speech Separation with Fast Generative Correction (GeCo)
 - **ArXiv:** 2406.07461
@@ -265,6 +278,24 @@
 - **Title:** SEMamba: State Space Model for Speech Enhancement
 - **Method:** Mamba blocks for speech enhancement. Handles non-stationary noise.
 - **Metrics:** DNSMOS comparable to Conformer-based at 3× lower compute.
+
+---
+
+## 6b. ARCHITECTURE EVOLUTION TIMELINE
+
+```
+2018: STFT masking (VoiceFilter, SpeakerBeam)
+  → 2019: Time-domain waveform (Conv-TasNet, SpEx) 
+    → 2020: Dual-path RNN (DPRNN), SpEx+
+      → 2021: Transformers (SepFormer: 22.3 dB)
+        → 2022: T-F hybrid (TF-GridNet v1: 23.4 dB)
+          → 2023: Hybrid+RNN-free (MossFormer2: 24.1 dB), Diffusion post-processing
+            → 2024: Mamba/SSM (SPMamba: 22.5 dB), TIGER (<1M params),
+                    SepReformer: 25.0 dB (current SOTA with DM)
+              → 2025+: Generative LMs (GenTSE), Human-feedback TSE
+```
+
+**Important update:** SepReformer (arXiv:2406.05983, NeurIPS 2024) is the current SOTA at **25.0 dB SI-SNRi** on WSJ0-2mix with dynamic mixing. MossFormer2 achieves **24.1 dB**. These numbers supersede some figures in the SOTA audit table.
 
 ---
 

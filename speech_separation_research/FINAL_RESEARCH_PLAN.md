@@ -48,6 +48,8 @@ The field of target speaker extraction (TSE) has advanced rapidly since 2019. Ke
 | 2022 | BSRNN | 21.0 dB | Band-split RNN (music+speech) |
 | 2023 | TF-GridNet | 23.4 dB | Complex T-F LSTM (blind) |
 | 2023 | AudioSep | N/A | Text query conditioning |
+| 2024 | MossFormer2 | 24.1 dB | Gated Transformer + FSMN recurrent (blind) |
+| 2024 | SepReformer | **25.0 dB** | Asymmetric enc-dec Transformer — current SOTA |
 | 2024 | SPMamba / TIGER | ~22–23 dB | State-space model + efficient T-F (streaming) |
 | 2024 | SpeakerBeam-SS | ~15 dB | SSM + speaker conditioning (real-time) |
 | 2025 | GenTSE | ~18 dB | Generative LM (decoder-only) for TSE |
@@ -70,9 +72,11 @@ Three critical gaps exist in the literature:
 |---|---|---|
 | SpEx+ (2021) | Speaker conditioning, multi-scale encoder | No TTS support, English only, no music |
 | VoiceFilter (2019) | Speaker conditioning, d-vector | No TTS, Google-internal, English |
+| **TTS Data Aug for PSE (ICASSP 2023)** | **TTS-synthesized speech for speaker conditioning** | **TTS only in training, NOT at inference; no iterative refinement; English only** |
 | AudioSep (2023) | Text conditioning for audio | Generic text, not voice-specific |
 | BSRNN (2022) | Music+speech handling | No speaker conditioning |
 | RVAE-EM (2022) | Iterative refinement | No neural TSE, no TTS |
+| GenTSE (2025) | LLM-based TSE with speaker cond. | English only; no TTS-enrollment study; slow generative inference |
 
 No single paper covers more than one of our three novel contributions simultaneously.
 
@@ -313,6 +317,12 @@ speech_separation_research/
 8. Richter, J. et al. "SGMSE+: Speech Enhancement and Dereverberation with Diffusion-Based Generative Models." arXiv:2208.05830
 9. Žmolíková, K. et al. "SpeakerBeam: Speaker Aware Neural Network for Target Speaker Extraction." IEEE JSTSP 2019.
 10. Babu, A. et al. "XLS-R: Self-supervised Cross-lingual Speech Representation Learning at Scale." arXiv:2111.09296
+11. Kim, J. et al. "SepReformer: Separate and Reconstruct: Asymmetric Encoder-Decoder for Speech Separation." NeurIPS 2024. arXiv:2406.05983 (**current SOTA: 25.0 dB SI-SNRi**)
+12. Zhao, S. et al. "MossFormer2: Combining Transformer and RNN-Free Recurrent Network." ICASSP 2024. arXiv:2312.11825 (24.1 dB SI-SDRi)
+13. Li, K. et al. "SPMamba: State-Space Model is All You Need in Speech Separation." arXiv:2404.02063
+14. Xu, M. et al. "TIGER: Time-frequency Interleaved Gain Extraction and Reconstruction." ICLR 2025. arXiv:2410.01469
+15. Sato, H. et al. "SpeakerBeam-SS: Real-time Target Speaker Extraction with SSM." INTERSPEECH 2024. arXiv:2407.01857
+16. "Neural Speech Synthesis-Based Data Augmentation for PSE." ICASSP 2023. arXiv:2211.07493 (**most directly related to our approach**)
 
 ---
 

@@ -9,8 +9,9 @@
 
 | # | Model | Year | Arch Type | Conditioning | Training Data | SI-SDRi (WSJ0-2mix) | SI-SDRi (WHAM!) | Notes | OSS? |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | TF-GridNet | 2023 | T-F Masking (hybrid) | None (blind) | WSJ0 | **23.4 dB** | **22.1 dB** | SOTA blind separation | Yes (ESPnet) |
-| 2 | MossFormer2 | 2023 | Gated Transformer+Conv | None (blind) | WSJ0+LibriMix | 23.0 dB | 21.8 dB | Near-SOTA, efficient | Yes (GitHub) |
+| 0 | SepReformer | 2024 | Asymmetric Enc-Dec Transformer | None (blind) | WSJ0 | **25.0 dB** (DM) | **SOTA** | NeurIPS 2024; current overall SOTA | Yes (GitHub) |
+| 1 | TF-GridNet | 2023 | T-F Masking (hybrid) | None (blind) | WSJ0 | 23.4 dB | 22.1 dB | Strong T-F baseline | Yes (ESPnet) |
+| 2 | MossFormer2 | 2024 | Gated Transformer+FSMN | None (blind) | WSJ0+LibriMix | **24.1 dB** | 22.0 dB | ICASSP 2024; efficient | Yes (GitHub) |
 | 3 | SepFormer | 2021 | Dual-path Transformer | None (blind) | WSJ0 | 22.3 dB | 20.4 dB | Well-maintained SpeechBrain | Yes (HuggingFace) |
 | 4 | BSRNN | 2022 | Band-split RNN | None (blind) | WSJ0+MusDB | 21.0 dB | 19.5 dB | Music+speech aware | Yes (GitHub) |
 | 5 | SpEx+ | 2021 | Multi-scale TCN | **Speaker embedding** | WSJ0 | 17.2 dB | ~14 dB | TSE-specific, best open TSE | Yes (GitHub) |
