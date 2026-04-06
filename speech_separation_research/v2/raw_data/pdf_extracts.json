@@ -1,0 +1,300 @@
+{
+  "AudioSep": {
+    "abstract": "Language-queried audio source separation (LASS) is a new paradigm for computational auditory scene analysis (CASA). LASS aims to separate a target sound from an audio mixture given a natural language query, which provides a natural and scalable interface for digital audio applications. Recent works on LASS, despite attaining promising separation performance on specific sources (e.g., musical instruments, limited classes of audio events), are unable to separate audio concepts in the open domain. ",
+    "metrics": {
+      "PESQ": {
+        "max": 2.43,
+        "vals": [
+          1.97,
+          1.97,
+          2.43
+        ]
+      }
+    },
+    "datasets": [],
+    "pages_text_len": 55384
+  },
+  "EMILIA": {
+    "abstract": "Recent advancements in speech generation models have been sig- nificantly driven by the use of large-scale training data. However, producing highly spontaneous, human-like speech remains a challenge due to the scarcity of large, diverse, and spontaneous speech datasets. In response, we introduce Emilia, the first large-scale, multilingual, and diverse speech generation dataset. Emilia starts with over 101k hours of speech across six languages, covering a wide range of speak- ing styles to enable",
+    "metrics": {
+      "WER": {
+        "max": 8.9,
+        "vals": [
+          8.9,
+          6.2
+        ]
+      }
+    },
+    "datasets": [
+      "LibriSpeech",
+      "DNS",
+      "EMILIA",
+      "hours of"
+    ],
+    "pages_text_len": 31541
+  },
+  "F5-TTS": {
+    "abstract": "This paper introduces F5-TTS, a fully non- autoregressive text-to-speech system based on flow matching with Diffusion Transformer (DiT). Without requiring complex designs such as duration model, text encoder, and phoneme alignment, the text input is simply padded with filler tokens to the same length as input speech, and then the denoising is performed for speech generation, which was originally proved fea- sible by E2 TTS. However, the original de- sign of E2 TTS makes it hard to follow due to ",
+    "metrics": {
+      "WER": {
+        "max": 50.0,
+        "vals": [
+          50.0
+        ]
+      }
+    },
+    "datasets": [
+      "LibriSpeech",
+      "EMILIA",
+      "hours of"
+    ],
+    "pages_text_len": 43760
+  },
+  "GenTSE": {
+    "abstract": "Language Model (LM)-based generative modeling has emerged as a promising direction for TSE, offering potential for im- proved generalization and high-fidelity speech. We present GenTSE, a two-stage decoder-only generative LM approach for TSE: Stage-",
+    "metrics": {
+      "DNSMOS": {
+        "max": 3.383,
+        "vals": [
+          3.383,
+          1.0
+        ]
+      }
+    },
+    "datasets": [
+      "LibriMix",
+      "Libri2Mix",
+      "WHAM",
+      "WHAMR",
+      "DNS",
+      "hours of"
+    ],
+    "pages_text_len": 27428
+  },
+  "Miipher": {
+    "abstract": "Speech restoration (SR) is a task of converting degraded speech signals into high-quality ones. In this study, we propose a robust SR model called Miipher, and apply Miipher to a new SR ap- plication: increasing the amount of high-quality training data for speech generation by converting speech samples collected from the Web to studio-quality. To make our SR model robust against vari- ous degradation, we use (i) a speech representation extracted from w2v-BERT for the input feature, and (ii) a te",
+    "metrics": {},
+    "datasets": [
+      "hours of"
+    ],
+    "pages_text_len": 32112
+  },
+  "MossFormer2": {
+    "abstract": "Our previously proposed MossFormer has achieved promising per- formance in monaural speech separation. However, it predominantly adopts a self-attention-based MossFormer module, which tends to emphasize longer-range, coarser-scale dependencies, with a defi- ciency in effectively modelling finer-scale recurrent patterns. In this paper, we introduce a novel hybrid model that provides the capa- bilities to model both long-range, coarse-scale dependencies and fine-scale recurrent patterns by integra",
+    "metrics": {},
+    "datasets": [
+      "WSJ0-2mix",
+      "LibriMix",
+      "Libri2Mix",
+      "WHAM",
+      "WHAMR",
+      "LibriSpeech",
+      "hours of"
+    ],
+    "pages_text_len": 27408
+  },
+  "Neural-TSE-Survey": {
+    "abstract": "Humans can listen to a target speaker even in challenging acoustic conditions that have noise, reverberation, and interfering speakers. This phenomenon is known as the cocktail-party effect. For decades, researchers have focused on approaching the listening ability of humans. One critical issue is handling interfering speakers because the target and non-target speech signals share similar characteristics, complicating their discrimination. Target speech/speaker extraction (TSE) isolates the spee",
+    "metrics": {},
+    "datasets": [
+      "DNS",
+      "hours of"
+    ],
+    "pages_text_len": 52270
+  },
+  "SPMamba": {
+    "abstract": "Existing CNN-based speech separation models face local receptive field limitations and cannot effectively capture long time dependencies. Although LSTM and Transformer-based speech separation models can avoid this problem, their high complexity makes them face the challenge of computational resources and inference efficiency when dealing with long audio. To address this challenge, we introduce an innovative speech separation method called SPMamba. This model builds upon the robust TF-GridNet arc",
+    "metrics": {},
+    "datasets": [
+      "WSJ0-2mix",
+      "LibriMix",
+      "Libri2Mix",
+      "WHAM",
+      "LibriSpeech",
+      "hours of"
+    ],
+    "pages_text_len": 26244
+  },
+  "SepReformer": {
+    "abstract": "In speech separation, time-domain approaches have successfully replaced the time-frequency domain with latent sequence feature from a learnable encoder. Conventionally, the feature is separated into speaker-specific ones at the final stage of the network. Instead, we propose a more intuitive strategy that separates features earlier by expanding the feature sequence to the number of speakers as an extra dimension. To achieve this, an asymmetric strategy is presented in which the encoder and decod",
+    "metrics": {},
+    "datasets": [
+      "WSJ0-2mix",
+      "LibriMix",
+      "Libri2Mix",
+      "WHAM",
+      "WHAMR",
+      "LibriSpeech"
+    ],
+    "pages_text_len": 40423
+  },
+  "SpEx+": {
+    "abstract": "Speaker extraction aims to extract the target speech signal from a multi-talker environment given a target speaker\u2019s ref- erence speech. We recently proposed a time-domain solution, SpEx, that avoids the phase estimation in frequency-domain ap- proaches. Unfortunately, SpEx is not fully a time-domain solu- tion since it performs time-domain speech encoding for speaker extraction, while taking frequency-domain speaker embedding as the reference. The size of the analysis window for time- domain an",
+    "metrics": {
+      "PESQ": {
+        "max": 4.1,
+        "vals": [
+          2.6,
+          2.5,
+          4.1
+        ]
+      },
+      "WER": {
+        "max": 4.1,
+        "vals": [
+          4.1
+        ]
+      }
+    },
+    "datasets": [
+      "WSJ0-2mix"
+    ],
+    "pages_text_len": 29008
+  },
+  "SpeakerBeam-SS": {
+    "abstract": "Real-time target speaker extraction (TSE) is intended to extract the desired speaker\u2019s voice from the observed mixture of mul- tiple speakers in a streaming manner. Implementing real-time TSE is challenging as the computational complexity must be reduced to provide real-time operation. This work introduces to Conv-TasNet-based TSE a new architecture based on state space modeling (SSM) that has been shown to model long- term dependency effectively. Owing to SSM, fewer dilated con- volutional laye",
+    "metrics": {
+      "WER": {
+        "max": 78.0,
+        "vals": [
+          78.0
+        ]
+      }
+    },
+    "datasets": [
+      "VoxCeleb",
+      "LibriSpeech",
+      "DNS"
+    ],
+    "pages_text_len": 30871
+  },
+  "SpeechX": {
+    "abstract": "Recent advancements in generative speech models based on audio-text prompts have enabled remarkable innova- tions like high-quality zero-shot text-to-speech. However, existing models still face limitations in handling diverse audio-text speech generation tasks involving transforming input speech and pro- cessing audio captured in adverse acoustic conditions. This paper introduces SpeechX, a versatile speech generation model capable of zero-shot TTS and various speech transformation tasks, deal- ",
+    "metrics": {
+      "PESQ": {
+        "max": 4.64,
+        "vals": [
+          3.29,
+          2.48,
+          2.37,
+          1.71,
+          4.64
+        ]
+      },
+      "WER": {
+        "max": 42.48,
+        "vals": [
+          10.0,
+          38.29,
+          42.48,
+          13.95
+        ]
+      },
+      "DNSMOS": {
+        "max": 5.9,
+        "vals": [
+          3.29,
+          2.48,
+          5.9,
+          5.9,
+          2.37
+        ]
+      }
+    },
+    "datasets": [
+      "LibriSpeech",
+      "DNS",
+      "hours of"
+    ],
+    "pages_text_len": 57837
+  },
+  "TF-GridNet-v1": {
+    "abstract": "We propose TF-GridNet, a novel multi-path deep neural network (DNN) operating in the time-frequency (T-F) domain, for monaural talker-independent speaker separation in anechoic conditions. The model stacks several multi-path blocks, each consisting of an intra- frame spectral module, a sub-band temporal module, and a full-band self-attention module, to leverage local and global spectro-temporal information for separation. The model is trained to perform complex spectral mapping, where the real a",
+    "metrics": {
+      "SI-SDR": {
+        "max": 23.4,
+        "vals": [
+          23.4,
+          22.1,
+          23.4,
+          21.1,
+          23.4
+        ]
+      }
+    },
+    "datasets": [
+      "WSJ0-2mix"
+    ],
+    "pages_text_len": 33140
+  },
+  "TIGER": {
+    "abstract": "In recent years, much speech separation research has focused primarily on im- proving model performance. However, for low-latency speech processing sys- tems, high efficiency is equally important. Therefore, we propose a speech separa- tion model with significantly reduced parameters and computational costs: Time- frequency Interleaved Gain Extraction and Reconstruction network (TIGER). TIGER leverages prior knowledge to divide frequency bands and compresses fre- quency information. We employ a ",
+    "metrics": {
+      "WER": {
+        "max": 95.3,
+        "vals": [
+          95.3,
+          95.3
+        ]
+      }
+    },
+    "datasets": [
+      "WSJ0-2mix",
+      "Libri2Mix",
+      "WHAM",
+      "WHAMR",
+      "LibriSpeech"
+    ],
+    "pages_text_len": 36057
+  },
+  "TTS-PSE-Aug": {
+    "abstract": "With the advances in deep learning, speech enhancement systems bene\ufb01ted from large neural network architectures and achieved state- of-the-art quality. However, speaker-agnostic methods are not al- ways desirable, both in terms of quality and their complexity, when they are to be used in a resource-constrained environment. One promising way is personalized speech enhancement (PSE), which is a smaller and easier speech enhancement problem for small models to solve, because it focuses on a particu",
+    "metrics": {},
+    "datasets": [
+      "LibriSpeech"
+    ],
+    "pages_text_len": 28409
+  },
+  "UniAudio": {
+    "abstract": "Large Language models (LLM) have demonstrated the capability to handle a vari- ety of generative tasks. This paper presents the UniAudio system, which, unlike prior task-specific approaches, leverages LLM techniques to generate multiple types of audio (including speech, sounds, music, and singing) with given input conditions. UniAudio 1) first tokenizes all types of target audio along with other condition modalities, 2) concatenates source-target pair as a single sequence, and 3) performs next-t",
+    "metrics": {
+      "PESQ": {
+        "max": 3.21,
+        "vals": [
+          3.21,
+          2.41,
+          2.87
+        ]
+      },
+      "DNSMOS": {
+        "max": 3.21,
+        "vals": [
+          3.21,
+          2.41,
+          2.87
+        ]
+      }
+    },
+    "datasets": [
+      "LibriSpeech",
+      "DNS",
+      "hours of"
+    ],
+    "pages_text_len": 42334
+  },
+  "VoiceCraft": {
+    "abstract": "We introduce VOICECRAFT, a token infilling neural codec language model, that achieves state-of-the-art performance on both speech editing and zero-shot text-to-speech (TTS) on audiobooks, internet videos, and podcasts1. VOICECRAFT employs a Transformer decoder architecture and introduces a token rearrange- ment procedure that combines causal mask- ing and delayed stacking to enable generation within an existing sequence. On speech editing tasks, VOICECRAFT produces edited speech that is nearly i",
+    "metrics": {
+      "WER": {
+        "max": 15.0,
+        "vals": [
+          15.0
+        ]
+      }
+    },
+    "datasets": [
+      "hours of"
+    ],
+    "pages_text_len": 45669
+  }
+}

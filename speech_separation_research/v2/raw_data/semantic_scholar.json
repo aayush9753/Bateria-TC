@@ -1,0 +1,404 @@
+{
+  "SpEx speaker extraction time domain": [
+    {
+      "paperId": "d1c98e90744c1ff65f1ed9170605063b788a9718",
+      "externalIds": {
+        "MAG": "3097653961",
+        "ArXiv": "2005.04686",
+        "DBLP": "journals/corr/abs-2005-04686",
+        "DOI": "10.21437/interspeech.2020-1397",
+        "CorpusId": 218581824
+      },
+      "title": "SpEx+: A Complete Time Domain Speaker Extraction Network",
+      "venue": "Interspeech",
+      "year": 2020,
+      "citationCount": 187,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2005.04686",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2005.04686, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "47589289",
+          "name": "Meng Ge"
+        },
+        {
+          "authorId": "3245675",
+          "name": "Chenglin Xu"
+        },
+        {
+          "authorId": "2111541663",
+          "name": "Longbiao Wang"
+        },
+        {
+          "authorId": "1742722",
+          "name": "Chng Eng Siong"
+        },
+        {
+          "authorId": "144699460",
+          "name": "J. Dang"
+        },
+        {
+          "authorId": "2108493009",
+          "name": "Haizhou Li"
+        }
+      ],
+      "abstract": "Speaker extraction aims to extract the target speech signal from a multi-talker environment given a target speaker's reference speech. We recently proposed a time-domain solution, SpEx, that avoids the phase estimation in frequency-domain approaches. Unfortunately, SpEx is not fully a time-domain solution since it performs time-domain speech encoding for speaker extraction, while taking frequency-domain speaker embedding as the reference. The size of the analysis window for time-domain and the size for frequency-domain input are also different. Such mismatch has an adverse effect on the system performance. To eliminate such mismatch, we propose a complete time-domain speaker extraction solution, that is called SpEx+. Specifically, we tie the weights of two identical speech encoder networks, one for the encoder-extractor-decoder pipeline, another as part of the speaker encoder. Experiments show that the SpEx+ achieves 0.8dB and 2.1dB SDR improvement over the state-of-the-art SpEx baseline, under different and same gender conditions on WSJ0-2mix-extr database respectively."
+    },
+    {
+      "paperId": "b5af4a2f7b702366e711ea31336026bd1333061e",
+      "externalIds": {
+        "MAG": "3016361963",
+        "DBLP": "journals/corr/abs-2004-08326",
+        "ArXiv": "2004.08326",
+        "DOI": "10.1109/TASLP.2020.2987429",
+        "CorpusId": 215814420
+      },
+      "title": "SpEx: Multi-Scale Time Domain Speaker Extraction Network",
+      "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+      "year": 2020,
+      "citationCount": 210,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/6570655/8938144/09067003.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2004.08326, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3245675",
+          "name": "Chenglin Xu"
+        },
+        {
+          "authorId": "46519385",
+          "name": "Wei Rao"
+        },
+        {
+          "authorId": "2457835",
+          "name": "E. Chng"
+        },
+        {
+          "authorId": "2108493009",
+          "name": "Haizhou Li"
+        }
+      ],
+      "abstract": "Speaker extraction aims to mimic humans\u2019 selective auditory attention by extracting a target speaker's voice from a multi-talker environment. It is common to perform the extraction in frequency-domain, and reconstruct the time-domain signal from the extracted magnitude and estimated phase spectra. However, such an approach is adversely affected by the inherent difficulty of phase estimation. Inspired by Conv-TasNet, we propose a time-domain speaker extraction network (SpEx) that converts the mixture speech into multi-scale embedding coefficients instead of decomposing the speech signal into magnitude and phase spectra. In this way, we avoid phase estimation. The SpEx network consists of four network components, namely speaker encoder, speech encoder, speaker extractor, and speech decoder. Specifically, the speech encoder converts the mixture speech into multi-scale embedding coefficients, the speaker encoder learns to represent the target speaker with a speaker embedding. The speaker extractor takes the multi-scale embedding coefficients and target speaker embedding as input and estimates a receptive mask. Finally, the speech decoder reconstructs the target speaker's speech from the masked embedding coefficients. We also propose a multi-task learning framework and a multi-scale embedding implementation. Experimental results show that the proposed SpEx achieves 37.3%, 37.7% and 15.0% relative improvements over the best baseline in terms of signal-to-distortion ratio (SDR), scale-invariant SDR (SI-SDR), and perceptual evaluation of speech quality (PESQ) under an open evaluation condition."
+    },
+    {
+      "paperId": "392c466e2200bf3b5ae895f2cc05090f2bbc7cb2",
+      "externalIds": {
+        "DBLP": "conf/icebe/HaoHHW21",
+        "DOI": "10.1109/ICEBE52470.2021.00030",
+        "CorpusId": 248115448
+      },
+      "title": "Denoi-SpEx+: A Speaker Extraction Network based Speech Dialogue System",
+      "venue": "IEEE International Conference on e-Business Engineering",
+      "year": 2021,
+      "citationCount": 1,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICEBE52470.2021.00030?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICEBE52470.2021.00030, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2114161411",
+          "name": "Yun Hao"
+        },
+        {
+          "authorId": "2116999741",
+          "name": "Xiangkang Huang"
+        },
+        {
+          "authorId": "2146086145",
+          "name": "Huichou Huang"
+        },
+        {
+          "authorId": "2162224658",
+          "name": "Qingyao Wu"
+        }
+      ],
+      "abstract": "The speech dialogue system has gradually been widely used in daily life. Users can consult and communicate with the system through natural language. However, in practical applications, third-person background sounds and background noise interference in real dialogue scenes will be encountered. The uncertainty and complexity of these background sounds will have a bad impact on the recognition of the system. A good speech enhancement module can help us to separate the target speaker from the original speech. Recently, a solution called SpEx+ was proposed from the time domain, but SpEx+ needs a reference speech to assist in training. This reference speech may have noise in actual applications that will affect performance. Therefore, we propose a Denoi-SpEx+ model. Before the reference speech is input to the network, a speech denoising network is added, so that the quality of speech separation in practical applications can be guaranteed. Experiments show that our model can significantly improve the performance of speech separation model of noisy reference speech."
+    },
+    {
+      "paperId": "59b22e956f2a2ef4e2e5d6069c262fbf2a569ed5",
+      "externalIds": {
+        "DBLP": "conf/interspeech/WangXG021",
+        "MAG": "3198234746",
+        "DOI": "10.21437/interspeech.2021-2260",
+        "CorpusId": 239683990
+      },
+      "title": "Neural Speaker Extraction with Speaker-Speech Cross-Attention Network",
+      "venue": "Interspeech",
+      "year": 2021,
+      "citationCount": 35,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.21437/interspeech.2021-2260?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.21437/interspeech.2021-2260, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108455671",
+          "name": "Wupeng Wang"
+        },
+        {
+          "authorId": "3245675",
+          "name": "Chenglin Xu"
+        },
+        {
+          "authorId": "47589289",
+          "name": "Meng Ge"
+        },
+        {
+          "authorId": "2108493009",
+          "name": "Haizhou Li"
+        }
+      ],
+      "abstract": "In this paper, we propose a novel time-domain speaker-speech cross-attention network as a variant of SpEx [1] architecture, that features speaker-speech cross-attention. The speaker-speech cross-attention network consists of speech semantic layers that capture the high-level dependency of audio feature, and cross-attention layers that fuse speaker embedding and speech features to estimate the speaker mask. We implement cross-attention layers with both parallel and sequential concatenation techniques. Experiments show that the proposed models consistently outperform the state-of-the-art time-domain speaker extraction baseline on WSJ0-2mix dataset"
+    },
+    {
+      "paperId": "8f96769c4947141183e433945a040d53ff0712e2",
+      "externalIds": {
+        "DBLP": "conf/iscslp/LiWRWM22",
+        "DOI": "10.1109/ISCSLP57327.2022.10038014",
+        "CorpusId": 256668518
+      },
+      "title": "Boosting the Performance of SpEx+ by Attention and Contextual Mechanism",
+      "venue": "International Symposium on Chinese Spoken Language Processing",
+      "year": 2022,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISCSLP57327.2022.10038014?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISCSLP57327.2022.10038014, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2143028853",
+          "name": "Chenyi Li"
+        },
+        {
+          "authorId": "50061551",
+          "name": "Zhiyong Wu"
+        },
+        {
+          "authorId": "46519385",
+          "name": "Wei Rao"
+        },
+        {
+          "authorId": "2257345451",
+          "name": "Yannan Wang"
+        },
+        {
+          "authorId": "145199941",
+          "name": "H. Meng"
+        }
+      ],
+      "abstract": "Target speaker extraction (TSE) aims to mimic human selective attention to extracting our interested voice from the multi-talker environment. Time-domain methods represented by SpEx+ [1] have promoted the process of TSE tasks while residual noise, squeaks, and over-suppression still exist in the extracted speech. In this paper, we explore three ways to improve the performance of SpEx+, referring to two attention-based weight learning mechanisms on disparate dimensions to generate typical features and the context mechanism to refine the extracted masks. Experiments on both single-channel and multi-channel signals preliminarily demonstrated the effectiveness of our explored methods on SpEx+, especially on speech quality and alleviating squeaks, unexpected noises, and over-suppression."
+    }
+  ],
+  "TTS speech enhancement data augmentation personalized": [
+    {
+      "paperId": "47f446e24f8516859d7ce90873f0954b1851d601",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2501-13372",
+        "ArXiv": "2501.13372",
+        "DOI": "10.1109/ICASSPW65056.2025.11011159",
+        "CorpusId": 275820365
+      },
+      "title": "Generative Data Augmentation Challenge: Zero-Shot Speech Synthesis for Personalized Speech Enhancement",
+      "venue": "2025 IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops (ICASSPW)",
+      "year": 2025,
+      "citationCount": 6,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.13372, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2342099894",
+          "name": "Jae-Sung Bae"
+        },
+        {
+          "authorId": "2341714420",
+          "name": "Anastasia Kuznetsova"
+        },
+        {
+          "authorId": "2341716284",
+          "name": "Dinesh Manocha"
+        },
+        {
+          "authorId": "2341717413",
+          "name": "John R. Hershey"
+        },
+        {
+          "authorId": "2769671",
+          "name": "T. Kristjansson"
+        },
+        {
+          "authorId": "2284522758",
+          "name": "Minje Kim"
+        }
+      ],
+      "abstract": "This paper presents a new challenge that calls for zero-shot text-to-speech (TTS) systems to augment speech data for the downstream task, personalized speech enhancement (PSE), as part of the Generative Data Augmentation workshop at ICASSP 2025. Collecting high-quality personalized data is challenging due to privacy concerns and technical difficulties in recording audio from the test scene. To address these issues, synthetic data generation using generative models has gained significant attention. In this challenge, participants are tasked first with building zero-shot TTS systems to augment personalized data. Subsequently, PSE systems are asked to be trained with this augmented personalized dataset. Through this challenge, we aim to investigate how the quality of augmented data generated by zero-shot TTS models affects PSE model performance. We also provide baseline experiments using open-source zero-shot TTS models to encourage participation and benchmark advancements. Our baseline code implementation and checkpoints are available online1."
+    },
+    {
+      "paperId": "48555a306acbcbcc7acaf1d2391bdad7a46f1b65",
+      "externalIds": {
+        "ArXiv": "2603.04219",
+        "CorpusId": 286239163
+      },
+      "title": "ZeSTA: Zero-Shot TTS Augmentation with Domain-Conditioned Training for Data-Efficient Personalized Speech Synthesis",
+      "venue": "",
+      "year": 2026,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.04219, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2377378505",
+          "name": "Youngwon Choi"
+        },
+        {
+          "authorId": "2292256533",
+          "name": "Jinwook Oh"
+        },
+        {
+          "authorId": "2377303240",
+          "name": "Hwayeon Kim"
+        },
+        {
+          "authorId": "2174220846",
+          "name": "Hyeonyu Kim"
+        }
+      ],
+      "abstract": "We investigate the use of zero-shot text-to-speech (ZS-TTS) as a data augmentation source for low-resource personalized speech synthesis. While synthetic augmentation can provide linguistically rich and phonetically diverse speech, naively mixing large amounts of synthetic speech with limited real recordings often leads to speaker similarity degradation during fine-tuning. To address this issue, we propose ZeSTA, a simple domain-conditioned training framework that distinguishes real and synthetic speech via a lightweight domain embedding, combined with real-data oversampling to stabilize adaptation under extremely limited target data, without modifying the base architecture. Experiments on LibriTTS and an in-house dataset with two ZS-TTS sources demonstrate that our approach improves speaker similarity over naive synthetic augmentation while preserving intelligibility and perceptual quality."
+    },
+    {
+      "paperId": "b00c0ac75d645f75a36f3a746b47843cdf555b6f",
+      "externalIds": {
+        "ArXiv": "2211.07493",
+        "DBLP": "conf/icassp/KuznetsovaSK23",
+        "DOI": "10.1109/ICASSP49357.2023.10096601",
+        "CorpusId": 253511192
+      },
+      "title": "The Potential of Neural Speech Synthesis-Based Data Augmentation for Personalized Speech Enhancement",
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "year": 2022,
+      "citationCount": 7,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2211.07493",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2211.07493, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2134705213",
+          "name": "Anastasia Kuznetsova"
+        },
+        {
+          "authorId": "35390620",
+          "name": "Aswin Sivaraman"
+        },
+        {
+          "authorId": "33752120",
+          "name": "Minje Kim"
+        }
+      ],
+      "abstract": "With the advances in deep learning, speech enhancement systems benefited from large neural network architectures and achieved state-of-the-art quality. However, speaker-agnostic methods are not always desirable, both in terms of quality and their complexity, when they are to be used in a resource-constrained environment. One promising way is personalized speech enhancement (PSE), which is a smaller and easier speech enhancement problem for small models to solve, because it focuses on a particular test-time user. To achieve the personalization goal, while dealing with the typical lack of personal data, we investigate the effect of data augmentation based on neural speech synthesis (NSS). In the proposed method, we show that the quality of the NSS system\u2019s synthetic data matters, and if they are good enough the augmented dataset can be used to improve the PSE system that outperforms the speaker-agnostic baseline. The proposed PSE systems show significant complexity reduction while preserving the enhancement quality."
+    },
+    {
+      "paperId": "9f1b95eea68008c4c4aaaeb12961c31a494d9311",
+      "externalIds": {
+        "DBLP": "conf/interspeech/Sivaraman0K21",
+        "ArXiv": "2104.02018",
+        "DOI": "10.21437/interspeech.2021-1868",
+        "CorpusId": 233025355
+      },
+      "title": "Personalized Speech Enhancement through Self-Supervised Data Augmentation and Purification",
+      "venue": "Interspeech",
+      "year": 2021,
+      "citationCount": 25,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2104.02018",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2104.02018, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "35390620",
+          "name": "Aswin Sivaraman"
+        },
+        {
+          "authorId": "2109652166",
+          "name": "Sunwoo Kim"
+        },
+        {
+          "authorId": "33752120",
+          "name": "Minje Kim"
+        }
+      ],
+      "abstract": "Training personalized speech enhancement models is innately a no-shot learning problem due to privacy constraints and limited access to noise-free speech from the target user. If there is an abundance of unlabeled noisy speech from the test-time user, a personalized speech enhancement model can be trained using self-supervised learning. One straightforward approach to model personalization is to use the target speaker's noisy recordings as pseudo-sources. Then, a pseudo denoising model learns to remove injected training noises and recover the pseudo-sources. However, this approach is volatile as it depends on the quality of the pseudo-sources, which may be too noisy. As a remedy, we propose an improvement to the self-supervised approach through data purification. We first train an SNR predictor model to estimate the frame-by-frame SNR of the pseudo-sources. Then, the predictor's estimates are converted into weights which adjust the frame-by-frame contribution of the pseudo-sources towards training the personalized model. We empirically show that the proposed data purification step improves the usability of the speaker-specific noisy data in the context of personalized speech enhancement. Without relying on any clean speech recordings or speaker embeddings, our approach may be seen as privacy-preserving."
+    },
+    {
+      "paperId": "d0c3ee1c2f78ae921c83652e5bb3c1ddf954a398",
+      "externalIds": {
+        "ArXiv": "2601.00935",
+        "DBLP": "journals/corr/abs-2601-00935",
+        "DOI": "10.1109/APSIPAASC65261.2025.11249050",
+        "CorpusId": 283358494
+      },
+      "title": "Improving Code-Switching Speech Recognition with TTS Data Augmentation",
+      "venue": "Asia-Pacific Signal and Information Processing Association Annual Summit and Conference",
+      "year": 2025,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.00935, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2282298841",
+          "name": "Yue Heng Yeo"
+        },
+        {
+          "authorId": "2373373588",
+          "name": "Yuchen Hu"
+        },
+        {
+          "authorId": "2363348636",
+          "name": "Shreyas Gopal"
+        },
+        {
+          "authorId": "2367344051",
+          "name": "Yizhou Peng"
+        },
+        {
+          "authorId": "2367037254",
+          "name": "Hexin Liu"
+        },
+        {
+          "authorId": "2053534715",
+          "name": "Chng Eng Siong"
+        }
+      ],
+      "abstract": "Automatic speech recognition (ASR) for conversational code-switching speech remains challenging due to the scarcity of realistic, high-quality labeled speech data. This paper explores multilingual text-to-speech (TTS) models as an effective data augmentation technique to address this shortage. Specifically, we fine-tune the multilingual CosyVoice2 TTS model on the SEAME dataset to generate synthetic conversational Chinese-English code-switching speech, significantly increasing the quantity and speaker diversity of available training data. Our experiments demonstrate that augmenting real speech with synthetic speech reduces the mixed error rate (MER) from 12.1 % to 10.1 % on DevMan and from 17.8 % to 16.0 % on DevSGE, indicating performance gains. These results confirm that multilingual TTS is an effective and practical tool for enhancing ASR robustness in low-resource, conversational code-switching scenarios."
+    }
+  ]
+}

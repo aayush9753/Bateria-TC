@@ -1,0 +1,442 @@
+{
+  "SpEx+": {
+    "title": "SpEx+: A Complete Time Domain Speaker Extraction Network",
+    "year": 2020,
+    "venue": "Interspeech",
+    "citations": 187,
+    "abstract": "Speaker extraction aims to extract the target speech signal from a multi-talker environment given a target speaker's reference speech. We recently proposed a time-domain solution, SpEx, that avoids the phase estimation in frequency-domain approaches. Unfortunately, SpEx is not fully a time-domain solution since it performs time-domain speech encoding for speaker extraction, while taking frequency-domain speaker embedding as the reference. The size of the analysis window for time-domain and the s",
+    "pdf_url": "https://arxiv.org/pdf/2005.04686",
+    "arxiv_id": "2005.04686"
+  },
+  "VoiceFilter": {
+    "title": "VoiceFilter: Targeted Voice Separation by Speaker-Conditioned Spectrogram Masking",
+    "year": 2018,
+    "venue": "Interspeech",
+    "citations": 418,
+    "abstract": "In this paper, we present a novel system that separates the voice of a target speaker from multi-speaker signals, by making use of a reference signal from the target speaker. We achieve this by training two separate neural networks: (1) A speaker recognition network that produces speaker-discriminative embeddings; (2) A spectrogram masking network that takes both noisy spectrogram and speaker embedding as input, and produces a mask. Our system significantly reduces the speech recognition WER on ",
+    "pdf_url": "https://arxiv.org/pdf/1810.04826",
+    "arxiv_id": "1810.04826"
+  },
+  "SpeakerBeam-SS": {
+    "title": "SpeakerBeam-SS: Real-time Target Speaker Extraction with Lightweight Conv-TasNet and State Space Modeling",
+    "year": 2024,
+    "venue": "Interspeech",
+    "citations": 14,
+    "abstract": "Real-time target speaker extraction (TSE) is intended to extract the desired speaker's voice from the observed mixture of multiple speakers in a streaming manner. Implementing real-time TSE is challenging as the computational complexity must be reduced to provide real-time operation. This work introduces to Conv-TasNet-based TSE a new architecture based on state space modeling (SSM) that has been shown to model long-term dependency effectively. Owing to SSM, fewer dilated convolutional layers ar",
+    "pdf_url": "",
+    "arxiv_id": "2407.01857"
+  },
+  "Conv-TasNet": {
+    "title": "Conv-TasNet: Surpassing Ideal Time\u2013Frequency Magnitude Masking for Speech Separation",
+    "year": 2018,
+    "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+    "citations": 2117,
+    "abstract": "Single-channel, speaker-independent speech separation methods have recently seen great progress. However, the accuracy, latency, and computational cost of such methods remain insufficient. The majority of the previous methods have formulated the separation problem through the time\u2013frequency representation of the mixed signal, which has several drawbacks, including the decoupling of the phase and magnitude of the signal, the suboptimality of time\u2013frequency representation for speech separation, an",
+    "pdf_url": "https://ieeexplore.ieee.org/ielx7/6570655/8716764/08707065.pdf",
+    "arxiv_id": "1809.07454"
+  },
+  "DPRNN": {
+    "title": "Dual-Path RNN: Efficient Long Sequence Modeling for Time-Domain Single-Channel Speech Separation",
+    "year": 2019,
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "citations": 932,
+    "abstract": "Recent studies in deep learning-based speech separation have proven the superiority of time-domain approaches to conventional time-frequency-based methods. Unlike the time-frequency domain approaches, the time-domain separation systems often receive input sequences consisting of a huge number of time steps, which introduces challenges for modeling extremely long sequences. Conventional recurrent neural networks (RNNs) are not effective for modeling such long sequences due to optimization difficu",
+    "pdf_url": "https://arxiv.org/pdf/1910.06379",
+    "arxiv_id": "1910.06379"
+  },
+  "TF-GridNet-v1": {
+    "title": "TF-GRIDNET: Making Time-Frequency Domain Models Great Again for Monaural Speaker Separation",
+    "year": 2022,
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "citations": 166,
+    "abstract": "We propose TF-GridNet, a novel multi-path deep neural network (DNN) operating in the time-frequency (T-F) domain, for monaural talker-independent speaker separation in anechoic conditions. The model stacks several multi-path blocks, each consisting of an intra-frame spectral module, a sub-band temporal module, and a full-band self-attention module, to leverage local and global spectro-temporal information for separation. The model is trained to perform complex spectral mapping, where the real an",
+    "pdf_url": "https://arxiv.org/pdf/2209.03952",
+    "arxiv_id": "2209.03952"
+  },
+  "BSRNN": {
+    "title": "Music Source Separation With Band-Split RNN",
+    "year": 2022,
+    "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+    "citations": 199,
+    "abstract": "The performance of music source separation (MSS) models has been greatly improved in recent years thanks to the development of novel neural network architectures and training pipelines. However, recent model designs for MSS were mainly motivated by other audio processing tasks or other research fields, such as speech enhancement and speech separation, while the intrinsic characteristics and patterns of the music signals were not fully discovered. In this paper, we propose band-split RNN (BSRNN),",
+    "pdf_url": "https://arxiv.org/pdf/2209.15174",
+    "arxiv_id": "2209.15174"
+  },
+  "AudioSep": {
+    "title": "Separate Anything You Describe",
+    "year": 2023,
+    "venue": "IEEE Transactions on Audio, Speech, and Language Processing",
+    "citations": 80,
+    "abstract": "Language-queried audio source separation (LASS) is a new paradigm for computational auditory scene analysis (CASA). LASS aims to separate a target sound from an audio mixture given a natural language query, which provides a natural and scalable interface for digital audio applications. Recent works on LASS, despite attaining promising separation performance on specific sources (e.g., musical instruments, limited classes of audio events), are unable to separate audio concepts in the open domain. ",
+    "pdf_url": "http://arxiv.org/pdf/2308.05037",
+    "arxiv_id": "2308.05037"
+  },
+  "UniAudio": {
+    "title": "UniAudio: An Audio Foundation Model Toward Universal Audio Generation",
+    "year": 2023,
+    "venue": "arXiv.org",
+    "citations": 193,
+    "abstract": "Large Language models (LLM) have demonstrated the capability to handle a variety of generative tasks. This paper presents the UniAudio system, which, unlike prior task-specific approaches, leverages LLM techniques to generate multiple types of audio (including speech, sounds, music, and singing) with given input conditions. UniAudio 1) first tokenizes all types of target audio along with other condition modalities, 2) concatenates source-target pair as a single sequence, and 3) performs next-tok",
+    "pdf_url": "https://arxiv.org/pdf/2310.00704",
+    "arxiv_id": "2310.00704"
+  },
+  "VoiceCraft": {
+    "title": "VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild",
+    "year": 2024,
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "citations": 170,
+    "abstract": "We introduce VoiceCraft, a token infilling neural codec language model, that achieves state-of-the-art performance on both speech editing and zero-shot text-to-speech (TTS) on audiobooks, internet videos, and podcasts. VoiceCraft employs a Transformer decoder architecture and introduces a token rearrangement procedure that combines causal masking and delayed stacking to enable generation within an existing sequence. On speech editing tasks, VoiceCraft produces edited speech that is nearly indist",
+    "pdf_url": "",
+    "arxiv_id": "2403.16973"
+  },
+  "Qwen-Audio": {
+    "title": "Qwen-Audio: Advancing Universal Audio Understanding via Unified Large-Scale Audio-Language Models",
+    "year": 2023,
+    "venue": "arXiv.org",
+    "citations": 689,
+    "abstract": "Recently, instruction-following audio-language models have received broad attention for audio interaction with humans. However, the absence of pre-trained audio models capable of handling diverse audio types and tasks has hindered progress in this field. Consequently, most existing works have only been able to support a limited range of interaction capabilities. In this paper, we develop the Qwen-Audio model and address this limitation by scaling up audio-language pre-training to cover over 30 t",
+    "pdf_url": "",
+    "arxiv_id": "2311.07919"
+  },
+  "EnCodec": {
+    "title": "High Fidelity Neural Audio Compression",
+    "year": 2022,
+    "venue": "Trans. Mach. Learn. Res.",
+    "citations": 1095,
+    "abstract": "We introduce a state-of-the-art real-time, high-fidelity, audio codec leveraging neural networks. It consists in a streaming encoder-decoder architecture with quantized latent space trained in an end-to-end fashion. We simplify and speed-up the training by using a single multiscale spectrogram adversary that efficiently reduces artifacts and produce high-quality samples. We introduce a novel loss balancer mechanism to stabilize training: the weight of a loss now defines the fraction of the overa",
+    "pdf_url": "http://arxiv.org/pdf/2210.13438",
+    "arxiv_id": "2210.13438"
+  },
+  "AudioLM": {
+    "title": "AudioLM: A Language Modeling Approach to Audio Generation",
+    "year": 2022,
+    "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+    "citations": 891,
+    "abstract": "We introduce AudioLM, a framework for high-quality audio generation with long-term consistency. AudioLM maps the input audio to a sequence of discrete tokens and casts audio generation as a language modeling task in this representation space. We show how existing audio tokenizers provide different trade-offs between reconstruction quality and long-term structure, and we propose a hybrid tokenization scheme to achieve both objectives. Namely, we leverage the discretized activations of a masked la",
+    "pdf_url": "https://arxiv.org/pdf/2209.03143",
+    "arxiv_id": "2209.03143"
+  },
+  "CosyVoice": {
+    "title": "CosyVoice: A Scalable Multilingual Zero-shot Text-to-speech Synthesizer based on Supervised Semantic Tokens",
+    "year": 2024,
+    "venue": "arXiv.org",
+    "citations": 399,
+    "abstract": "Recent years have witnessed a trend that large language model (LLM) based text-to-speech (TTS) emerges into the mainstream due to their high naturalness and zero-shot capacity. In this paradigm, speech signals are discretized into token sequences, which are modeled by an LLM with text as prompts and reconstructed by a token-based vocoder to waveforms. Obviously, speech tokens play a critical role in LLM-based TTS models. Current speech tokens are learned in an unsupervised manner, which lacks ex",
+    "pdf_url": "",
+    "arxiv_id": "2407.05407"
+  },
+  "Dual-path-Mamba": {
+    "title": "Dual-path Mamba: Short and Long-term Bidirectional Selective Structured State Space Models for Speech Separation",
+    "year": 2024,
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "citations": 81,
+    "abstract": "Transformers have been the most successful architecture for various speech modeling tasks, including speech separation. However, the self-attention mechanism in transformers with quadratic complexity is inefficient in computation and memory. Recent models incorporate new layers and modules along with transformers for better performance but also introduce extra model complexity. In this work, we replace transformers with Mamba, a selective state space model, for speech separation. We propose dual",
+    "pdf_url": "",
+    "arxiv_id": "2403.18257"
+  },
+  "HT-Demucs": {
+    "title": "Hybrid Transformers for Music Source Separation",
+    "year": 2022,
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "citations": 267,
+    "abstract": "A natural question arising in Music Source Separation (MSS) is whether long range contextual information is useful, or whether local acoustic features are sufficient. In other fields, attention based Transformers [1] have shown their ability to integrate information over long sequences. In this work, we introduce Hybrid Transformer Demucs (HT Demucs), an hybrid temporal/spectral bi-U-Net based on Hybrid Demucs [2], where the innermost layers are replaced by a cross-domain Transformer Encoder, us",
+    "pdf_url": "https://arxiv.org/pdf/2211.08553",
+    "arxiv_id": "2211.08553"
+  },
+  "StyleTTS2": {
+    "title": "StyleTTS 2: Towards Human-Level Text-to-Speech through Style Diffusion and Adversarial Training with Large Speech Language Models",
+    "year": 2023,
+    "venue": "Neural Information Processing Systems",
+    "citations": 236,
+    "abstract": "In this paper, we present StyleTTS 2, a text-to-speech (TTS) model that leverages style diffusion and adversarial training with large speech language models (SLMs) to achieve human-level TTS synthesis. StyleTTS 2 differs from its predecessor by modeling styles as a latent random variable through diffusion models to generate the most suitable style for the text without requiring reference speech, achieving efficient latent diffusion while benefiting from the diverse speech synthesis offered by di",
+    "pdf_url": "http://arxiv.org/pdf/2306.07691",
+    "arxiv_id": "2306.07691"
+  },
+  "SpEx": {
+    "title": "SpEx: Multi-Scale Time Domain Speaker Extraction Network",
+    "year": 2020,
+    "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+    "citations": 210,
+    "abstract": "Speaker extraction aims to mimic humans\u2019 selective auditory attention by extracting a target speaker's voice from a multi-talker environment. It is common to perform the extraction in frequency-domain, and reconstruct the time-domain signal from the extracted magnitude and estimated phase spectra. However, such an approach is adversely affected by the inherent difficulty of phase estimation. Inspired by Conv-TasNet, we propose a time-domain speaker extraction network (SpEx) that converts the mixture speech into multi-scale embedding coefficients instead of decomposing the speech signal into ma",
+    "pdf_url": "https://ieeexplore.ieee.org/ielx7/6570655/8938144/09067003.pdf",
+    "arxiv_id": "2004.08326"
+  },
+  "VoiceFilter-Lite": {
+    "title": "VoiceFilter-Lite: Streaming Targeted Voice Separation for On-Device Speech Recognition",
+    "year": 2020,
+    "venue": "Interspeech",
+    "citations": 98,
+    "abstract": "We introduce VoiceFilter-Lite, a single-channel source separation model that runs on the device to preserve only the speech signals from a target user, as part of a streaming speech recognition system. Delivering such a model presents numerous challenges: It should improve the performance when the input signal consists of overlapped speech, and must not hurt the speech recognition performance under all other acoustic conditions. Besides, this model must be tiny, fast, and perform inference in a streaming fashion, in order to have minimal impact on CPU, memory, battery and latency. We propose n",
+    "pdf_url": "https://arxiv.org/pdf/2009.04323",
+    "arxiv_id": "2009.04323"
+  },
+  "GenTSE": {
+    "title": "GenTSE: Coarse-to-Fine Generative LM for Target Speaker Extraction",
+    "year": 2025,
+    "venue": "arXiv Dec 2024",
+    "citations": 0,
+    "arxiv_id": "2512.20978",
+    "abstract": "Two-stage decoder-only LM. Stage 1: coarse semantic tokens (SSL). Stage 2: fine acoustic tokens (codec). Frozen-LM Conditioning (FLC) + DPO alignment. dWER reduced 0.217\u21920.172. DNSMOS 3.4+. Superior to prior LM-based TSE on Libri2Mix."
+  },
+  "SepFormer": {
+    "title": "Attention Is All You Need In Speech Separation",
+    "year": 2020,
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "citations": 745,
+    "abstract": "Recurrent Neural Networks (RNNs) have long been the dominant architecture in sequence-to-sequence learning. RNNs, however, are inherently sequential models that do not allow parallelization of their computations. Transformers are emerging as a natural alternative to standard RNNs, replacing recurrent computations with a multi-head attention mechanism.In this paper, we propose the SepFormer, a novel RNN-free Transformer-based neural network for speech separation. The Sep-Former learns short and long-term dependencies with a multi-scale approach that employs transformers. The proposed model achi",
+    "pdf_url": "https://arxiv.org/pdf/2010.13154",
+    "arxiv_id": "2010.13154"
+  },
+  "TF-GridNet-v2": {
+    "title": "TF-GridNet: Integrating Full- and Sub-Band Modeling for Speech Separation",
+    "year": 2022,
+    "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+    "citations": 223,
+    "abstract": "We propose TF-GridNet for speech separation. The model is a novel deep neural network (DNN) integrating full- and sub-band modeling in the time-frequency (T-F) domain. It stacks several blocks, each consisting of an intra-frame full-band module, a sub-band temporal module, and a cross-frame self-attention module. It is trained to perform complex spectral mapping, where the real and imaginary (RI) components of input signals are stacked as features to predict target RI components. We first evaluate it on monaural anechoic speaker separation. Without using data augmentation and dynamic mixing, i",
+    "pdf_url": "https://arxiv.org/pdf/2211.12433",
+    "arxiv_id": "2211.12433"
+  },
+  "MossFormer2": {
+    "title": "MossFormer2: Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation",
+    "year": 2023,
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "citations": 74,
+    "abstract": "Our previously proposed MossFormer has achieved promising performance in monaural speech separation. However, it predominantly adopts a self-attention-based MossFormer module, which tends to emphasize longer-range, coarser-scale dependencies, with a deficiency in effectively modelling finer-scale recurrent patterns. In this paper, we introduce a novel hybrid model that provides the capabilities to model both long-range, coarse-scale dependencies and fine-scale recurrent patterns by integrating a recurrent module into the MossFormer framework. Instead of applying the recurrent neural networks (",
+    "pdf_url": "https://arxiv.org/pdf/2312.11825",
+    "arxiv_id": "2312.11825"
+  },
+  "SPMamba": {
+    "title": "SPMamba: State-space model is all you need in speech separation",
+    "year": 2024,
+    "venue": "",
+    "citations": 0,
+    "abstract": "Existing CNN-based speech separation models face local receptive field limitations and cannot effectively capture long time dependencies. Although LSTM and Transformer-based speech separation models can avoid this problem, their high complexity makes them face the challenge of computational resources and inference efficiency when dealing with long audio. To address this challenge, we introduce an innovative speech separation method called SPMamba. This model builds upon the robust TF-GridNet architecture, replacing its traditional BLSTM modules with bidirectional Mamba modules. These modules e",
+    "pdf_url": "",
+    "arxiv_id": "2404.02063"
+  },
+  "TIGER": {
+    "title": "TIGER: Time-frequency Interleaved Gain Extraction and Reconstruction for Efficient Speech Separation",
+    "year": 2024,
+    "venue": "International Conference on Learning Representations",
+    "citations": 12,
+    "abstract": "In recent years, much speech separation research has focused primarily on improving model performance. However, for low-latency speech processing systems, high efficiency is equally important. Therefore, we propose a speech separation model with significantly reduced parameters and computational costs: Time-frequency Interleaved Gain Extraction and Reconstruction network (TIGER). TIGER leverages prior knowledge to divide frequency bands and compresses frequency information. We employ a multi-scale selective attention module to extract contextual features while introducing a full-frequency-fram",
+    "pdf_url": "",
+    "arxiv_id": "2410.01469"
+  },
+  "SepReformer": {
+    "title": "Separate and Reconstruct: Asymmetric Encoder-Decoder for Speech Separation",
+    "year": 2024,
+    "venue": "Neural Information Processing Systems",
+    "citations": 32,
+    "abstract": "In speech separation, time-domain approaches have successfully replaced the time-frequency domain with latent sequence feature from a learnable encoder. Conventionally, the feature is separated into speaker-specific ones at the final stage of the network. Instead, we propose a more intuitive strategy that separates features earlier by expanding the feature sequence to the number of speakers as an extra dimension. To achieve this, an asymmetric strategy is presented in which the encoder and decoder are partitioned to perform distinct processing in separation tasks. The encoder analyzes features",
+    "pdf_url": "",
+    "arxiv_id": "2406.05983"
+  },
+  "WavLM": {
+    "title": "WavLM: Large-Scale Self-Supervised Pre-Training for Full Stack Speech Processing",
+    "year": 2021,
+    "venue": "IEEE Journal on Selected Topics in Signal Processing",
+    "citations": 2950,
+    "abstract": "Self-supervised learning (SSL) achieves great success in speech recognition, while limited exploration has been attempted for other speech processing tasks. As speech signal contains multi-faceted information including speaker identity, paralinguistics, spoken content, etc., learning universal representations for all speech tasks is challenging. To tackle the problem, we propose a new pre-trained model, WavLM, to solve full-stack downstream speech tasks. WavLM jointly learns masked speech prediction and denoising in pre-training. By this means, WavLM does not only keep the speech content model",
+    "pdf_url": "https://arxiv.org/pdf/2110.13900",
+    "arxiv_id": "2110.13900"
+  },
+  "Miipher": {
+    "title": "Miipher: A Robust Speech Restoration Model Integrating Self-Supervised Speech and Text Representations",
+    "year": 2023,
+    "venue": "IEEE Workshop on Applications of Signal Processing to Audio and Acoustics",
+    "citations": 46,
+    "abstract": "Speech restoration (SR) is a task of converting degraded speech signals into high-quality ones. In this study, we propose a robust SR model called Miipher, and apply Miipher to a new SR application: increasing the amount of high-quality training data for speech generation by converting speech samples collected from the Web to studio-quality. To make our SR model robust against various degradation, we use (i) a speech representation extracted from w2v-BERT for the input feature, and (ii) a text representation extracted from transcripts via PnG-BERT as a linguistic conditioning feature. Experime",
+    "pdf_url": "https://arxiv.org/pdf/2303.01664",
+    "arxiv_id": "2303.01664"
+  },
+  "SGMSE+": {
+    "title": "Speech Enhancement and Dereverberation With Diffusion-Based Generative Models",
+    "year": 2022,
+    "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+    "citations": 352,
+    "abstract": "In this work, we build upon our previous publication and use diffusion-based generative models for speech enhancement. We present a detailed overview of the diffusion process that is based on a stochastic differential equation and delve into an extensive theoretical examination of its implications. Opposed to usual conditional generation tasks, we do not start the reverse process from pure Gaussian noise but from a mixture of noisy speech and Gaussian noise. This matches our forward process which moves from clean speech to noisy speech by including a drift term. We show that this procedure ena",
+    "pdf_url": "http://arxiv.org/pdf/2208.05830",
+    "arxiv_id": "2208.05830"
+  },
+  "GeCo": {
+    "title": "Noise-robust Speech Separation with Fast Generative Correction",
+    "year": 2024,
+    "venue": "Interspeech",
+    "citations": 9,
+    "abstract": "Speech separation, the task of isolating multiple speech sources from a mixed audio signal, remains challenging in noisy environments. In this paper, we propose a generative correction method to enhance the output of a discriminative separator. By leveraging a generative corrector based on a diffusion model, we refine the separation process for single-channel mixture speech by removing noises and perceptually unnatural distortions. Furthermore, we optimize the generative model using a predictive loss to streamline the diffusion model's reverse process into a single step and rectify any associa",
+    "pdf_url": "https://arxiv.org/pdf/2406.07461",
+    "arxiv_id": "2406.07461"
+  },
+  "SpeechX": {
+    "title": "SpeechX: Neural Codec Language Model as a Versatile Speech Transformer",
+    "year": 2023,
+    "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+    "citations": 118,
+    "abstract": "Recent advancements in generative speech models based on audio-text prompts have enabled remarkable innovations like high-quality zero-shot text-to-speech. However, existing models still face limitations in handling diverse audio-text speech generation tasks involving transforming input speech and processing audio captured in adverse acoustic conditions. This paper introduces SpeechX, a versatile speech generation model capable of zero-shot TTS and various speech transformation tasks, dealing with both clean and noisy signals. SpeechX combines neural codec language modeling with multi-task lea",
+    "pdf_url": "https://arxiv.org/pdf/2308.06873",
+    "arxiv_id": "2308.06873"
+  },
+  "SALMONN": {
+    "title": "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+    "year": 2023,
+    "venue": "International Conference on Learning Representations",
+    "citations": 519,
+    "abstract": "Hearing is arguably an essential ability of artificial intelligence (AI) agents in the physical world, which refers to the perception and understanding of general auditory information consisting of at least three types of sounds: speech, audio events, and music. In this paper, we propose SALMONN, a speech audio language music open neural network, built by integrating a pre-trained text-based large language model (LLM) with speech and audio encoders into a single multimodal model. SALMONN enables the LLM to directly process and understand general audio inputs and achieve competitive performance",
+    "pdf_url": "",
+    "arxiv_id": "2310.13289"
+  },
+  "AudioPaLM": {
+    "title": "AudioPaLM: A Large Language Model That Can Speak and Listen",
+    "year": 2023,
+    "venue": "arXiv.org",
+    "citations": 432,
+    "abstract": "We introduce AudioPaLM, a large language model for speech understanding and generation. AudioPaLM fuses text-based and speech-based language models, PaLM-2 [Anil et al., 2023] and AudioLM [Borsos et al., 2022], into a unified multimodal architecture that can process and generate text and speech with applications including speech recognition and speech-to-speech translation. AudioPaLM inherits the capability to preserve paralinguistic information such as speaker identity and intonation from AudioLM and the linguistic knowledge present only in text large language models such as PaLM-2. We demons",
+    "pdf_url": "http://arxiv.org/pdf/2306.12925",
+    "arxiv_id": "2306.12925"
+  },
+  "DAC": {
+    "title": "High-Fidelity Audio Compression with Improved RVQGAN",
+    "year": 2023,
+    "venue": "Neural Information Processing Systems",
+    "citations": 654,
+    "abstract": "Language models have been successfully used to model natural signals, such as images, speech, and music. A key component of these models is a high quality neural compression model that can compress high-dimensional natural signals into lower dimensional discrete tokens. To that end, we introduce a high-fidelity universal neural audio compression algorithm that achieves ~90x compression of 44.1 KHz audio into tokens at just 8kbps bandwidth. We achieve this by combining advances in high-fidelity audio generation with better vector quantization techniques from the image domain, along with improve",
+    "pdf_url": "http://arxiv.org/pdf/2306.06546",
+    "arxiv_id": "2306.06546"
+  },
+  "VALL-E": {
+    "title": "Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers",
+    "year": 2023,
+    "venue": "IEEE Transactions on Audio, Speech, and Language Processing",
+    "citations": 1126,
+    "abstract": "We introduce a language modeling approach for text to speech synthesis (TTS). Specifically, we train a neural codec language model (called VALL-E) using discrete codes derived from an off-the-shelf neural audio codec model, and regard TTS as a conditional language modeling task rather than continuous signal regression as in previous work. During the pre-training stage, we scale up the TTS training data to 50 k hours of English speech which is hundreds of times larger than existing systems. VALL-E emerges in-context learning capability and can be used to synthesize high-quality personalized spe",
+    "pdf_url": "",
+    "arxiv_id": "2301.02111"
+  },
+  "SoundStorm": {
+    "title": "SoundStorm: Efficient Parallel Audio Generation",
+    "year": 2023,
+    "venue": "arXiv.org",
+    "citations": 142,
+    "abstract": "We present SoundStorm, a model for efficient, non-autoregressive audio generation. SoundStorm receives as input the semantic tokens of AudioLM, and relies on bidirectional attention and confidence-based parallel decoding to generate the tokens of a neural audio codec. Compared to the autoregressive generation approach of AudioLM, our model produces audio of the same quality and with higher consistency in voice and acoustic conditions, while being two orders of magnitude faster. SoundStorm generates 30 seconds of audio in 0.5 seconds on a TPU-v4. We demonstrate the ability of our model to scale",
+    "pdf_url": "http://arxiv.org/pdf/2305.09636",
+    "arxiv_id": "2305.09636"
+  },
+  "F5-TTS": {
+    "title": "F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching",
+    "year": 2024,
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "citations": 350,
+    "abstract": "This paper introduces F5-TTS, a fully non-autoregressive text-to-speech system based on flow matching with Diffusion Transformer (DiT). Without requiring complex designs such as duration model, text encoder, and phoneme alignment, the text input is simply padded with filler tokens to the same length as input speech, and then the denoising is performed for speech generation, which was originally proved feasible by E2 TTS. However, the original design of E2 TTS makes it hard to follow due to its slow convergence and low robustness. To address these issues, we first model the input with ConvNeXt ",
+    "pdf_url": "",
+    "arxiv_id": "2410.06885"
+  },
+  "EMILIA": {
+    "title": "Emilia: An Extensive, Multilingual, and Diverse Speech Dataset For Large-Scale Speech Generation",
+    "year": 2024,
+    "venue": "Spoken Language Technology Workshop",
+    "citations": 213,
+    "abstract": "Recent advancements in speech generation models have been significantly driven by the use of large-scale training data. However, producing highly spontaneous, human-like speech remains a challenge due to the scarcity of large, diverse, and spontaneous speech datasets. In response, we introduce Emilia, the first large-scale, multilingual, and diverse speech generation dataset. Emilia starts with over 101k hours of speech across six languages, covering a wide range of speaking styles to enable more natural and spontaneous speech generation. To facilitate the scale-up of Emilia, we also present E",
+    "pdf_url": "https://arxiv.org/pdf/2407.05361",
+    "arxiv_id": "2407.05361"
+  },
+  "TTS-PSE-Aug": {
+    "title": "The Potential of Neural Speech Synthesis-Based Data Augmentation for Personalized Speech Enhancement",
+    "year": 2022,
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "citations": 7,
+    "abstract": "With the advances in deep learning, speech enhancement systems benefited from large neural network architectures and achieved state-of-the-art quality. However, speaker-agnostic methods are not always desirable, both in terms of quality and their complexity, when they are to be used in a resource-constrained environment. One promising way is personalized speech enhancement (PSE), which is a smaller and easier speech enhancement problem for small models to solve, because it focuses on a particular test-time user. To achieve the personalization goal, while dealing with the typical lack of person",
+    "pdf_url": "https://arxiv.org/pdf/2211.07493",
+    "arxiv_id": "2211.07493"
+  },
+  "Neural-TSE-Survey": {
+    "title": "Neural Target Speech Extraction: An overview",
+    "year": 2023,
+    "venue": "IEEE Signal Processing Magazine",
+    "citations": 148,
+    "abstract": "Humans can listen to a target speaker even in challenging acoustic conditions that have noise, reverberation, and interfering speakers. This phenomenon is known as the cocktail party effect. For decades, researchers have focused on approaching the listening ability of humans. One critical issue is handling interfering speakers because the target and nontarget speech signals share similar characteristics, complicating their discrimination. Target speech/speaker extraction (TSE) isolates the speech signal of a target speaker from a mixture of several speakers, with or without noises and reverber",
+    "pdf_url": "https://arxiv.org/pdf/2301.13341",
+    "arxiv_id": "2301.13341"
+  },
+  "XTTS": {
+    "title": "XTTS: a Massively Multilingual Zero-Shot Text-to-Speech Model",
+    "year": 2024,
+    "venue": "Interspeech",
+    "citations": 245,
+    "abstract": "Most Zero-shot Multi-speaker TTS (ZS-TTS) systems support only a single language. Although models like YourTTS, VALL-E X, Mega-TTS 2, and Voicebox explored Multilingual ZS-TTS they are limited to just a few high/medium resource languages, limiting the applications of these models in most of the low/medium resource languages. In this paper, we aim to alleviate this issue by proposing and making publicly available the XTTS system. Our method builds upon the Tortoise model and adds several novel modifications to enable multilingual training, improve voice cloning, and enable faster training and i",
+    "pdf_url": "",
+    "arxiv_id": "2406.04904"
+  },
+  "USEF-TSE": {
+    "title": "USEF-TSE: Universal Speaker Embedding Free Target Speaker Extraction",
+    "year": 2024,
+    "venue": "IEEE/ACM TASLP",
+    "citations": 15,
+    "arxiv_id": "2409.02615",
+    "abstract": "No speaker embedding needed. CMHA (Cross Multi-Head Attention) uses full reference audio as frame-level feature extractor. USEF-SepFormer and USEF-TFGridNet variants. Best WavLM similarity (0.935) among TSE models. SI-SDRi 23.3 dB on noisy+reverberant."
+  },
+  "FlowSep": {
+    "title": "FlowSep: Language-Queried Sound Separation with Rectified Flow Matching",
+    "year": 2024,
+    "venue": "ICASSP 2025",
+    "citations": 8,
+    "arxiv_id": "2409.07614",
+    "abstract": "Rectified flow matching in VAE latent space for text-queried audio separation. FLAN-T5 text encoder + UNet with cross-attention. 10 inference steps vs diffusion's 200+. FAD 2.86 on AudioCaps (vs AudioSep 4.38). First flow-based LASS."
+  },
+  "TSELM": {
+    "title": "TSELM: Target Speaker Extraction using Discrete Tokens and Language Models",
+    "year": 2024,
+    "venue": "ICASSP 2025",
+    "citations": 10,
+    "arxiv_id": "2409.07841",
+    "abstract": "WavLM discrete tokens + cross-attention for TSE. Language model captures token dependencies. HiFi-GAN for resynthesis. Cross-entropy loss. DNSMOS OVL=3.27 (vs SpEx+ 2.93). Speaker sim WavLM=0.793. Intelligibility slightly lower than discriminative."
+  },
+  "AnyEnhance": {
+    "title": "AnyEnhance: A Unified Generative Model with Prompt-Guidance for Voice Enhancement",
+    "year": 2025,
+    "venue": "arXiv Jan 2025",
+    "citations": 12,
+    "arxiv_id": "2501.15417",
+    "abstract": "MaskGIT-style masked generative model for speech/singing enhancement. Audio codec tokens. Prompt-guidance: reference speaker audio injected for TSE. Self-critic for iterative quality. WV-MOS=4.44. Trained on 21k hr Emilia + singing + noise. Handles denoising, dereverb, declipping, SR, TSE in one model."
+  },
+  "SAM-Audio": {
+    "title": "SAM Audio: Segment Anything in Audio",
+    "year": 2025,
+    "venue": "Meta FAIR, arXiv Dec 2025",
+    "citations": 5,
+    "arxiv_id": "2512.18099",
+    "abstract": "Meta's universal audio separation. DiT + flow matching. 500M-3B params. ~1M hours training. Text/visual/temporal span prompts. Does NOT support audio enrollment. In-the-wild benchmark (SAM Audio Bench). Outperforms MossFormer2, TIGER on all categories. License: SAM License."
+  },
+  "LauraTSE": {
+    "title": "LauraTSE: Auto-Regressive Decoder-Only LM for Target Speaker Extraction",
+    "year": 2025,
+    "venue": "arXiv Apr 2025",
+    "citations": 4,
+    "arxiv_id": "2504.07402",
+    "abstract": "AR decoder-only LM (LauraGPT backbone) generates coarse codec tokens, then encoder-only LM refines. Continuous embeddings of mixture+reference. DNSMOS=3.609, WavLM Sim=0.908. LauraTSE-streaming variant for real-time. dWER=4.333 (slightly worse than USEF-TSE)."
+  },
+  "Disc-Gen-TSE": {
+    "title": "Discriminative-Generative TSE Framework (2601.06006)",
+    "year": 2025,
+    "venue": "arXiv Jan 2026",
+    "citations": 2,
+    "arxiv_id": "2601.06006",
+    "abstract": "LauraTSE + discriminative hybrid. Discriminative front-end provides stable intermediate representations. Generative back-end (codec space) adds perceptual quality. Best of both worlds. Evaluated with WavLM Sim + WeSpeaker Sim."
+  },
+  "Geneses": {
+    "title": "Geneses: Unified Generative Speech Enhancement and Separation",
+    "year": 2025,
+    "venue": "arXiv Jan 2026",
+    "citations": 1,
+    "arxiv_id": "2601.18456",
+    "abstract": "Flow-matching DiT for joint enhancement+separation. SSL features from noisy mixture condition the flow predictor. Multi-speaker prediction jointly. DNSMOS/NISQA close to ground truth on LibriTTS-R 2-speaker. Unified enhancement+separation in one generative model."
+  },
+  "LibriheavyMix": {
+    "title": "LibriheavyMix: A 10,000-Hour Dataset for Shadow-Boxing Speech Enhancement",
+    "year": 2024,
+    "venue": "Interspeech 2024",
+    "citations": 8,
+    "arxiv_id": "2409.00819",
+    "abstract": "20,000 hours multi-turn reverberant overlapping speech. Derived from Libriheavy. Variable speaker overlaps (0-100%). RIR augmentation. Explicit train/test speaker splits."
+  }
+}
