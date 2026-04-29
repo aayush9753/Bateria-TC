@@ -2,6 +2,8 @@
 
 These examples show the same information written the default AI way vs the prose way. Use these to calibrate when generating responses.
 
+**Critical principle: prose mode means the same information in better form — not less information.** A prose version that drops technical details to sound conversational has failed. Every specific point from the "default" version should survive into the prose version; the prose just connects them into argument rather than fragmenting them into a list.
+
 ---
 
 ## Summarizing a research paper
@@ -97,8 +99,10 @@ In practice almost nobody uses true gradient descent, where you'd compute the gr
 
 ### PROSE (write like this)
 
-TypeScript's main value is not what it catches — it's what it makes possible. Once you have types, your IDE can tell you what a function expects, what it returns, and what you'll break if you rename a field. In a large codebase that means refactoring goes from a terrifying grep session to something you can actually trust. That's the real payoff, not the compile-time errors.
+Note: this version covers every technical point from the DEFAULT — static typing, autocomplete, refactoring, interfaces, compilation step, learning curve, generics, tsconfig — but in connected argument rather than a disconnected list.
 
-The friction is real though, and it concentrates at the beginning. Getting `tsconfig.json` right, fighting the type system when you're doing something it doesn't naturally express, explaining to a new contributor why their `any` is a problem — all of that costs time. For a quick script or a prototype you'll throw away in a week, it's straightforwardly not worth it.
+TypeScript's real value isn't the compile-time error catches, though those are real. It's that the type system makes information available throughout the development workflow rather than only at runtime. Your IDE can autocomplete a method call because it knows the return type of the previous call. It can warn you that you're passing a string where a number is expected before you even run anything. And the interfaces don't just help the tooling — they're documentation that the compiler enforces, which means a function's contract is stated once and can't silently drift from its implementation.
 
-The threshold question is roughly this: will multiple people touch this code over multiple months? If yes, TypeScript. If you're the only one, and it's small, JavaScript is fine and there's no reason to pretend otherwise.
+The cost side is more specific than "learning curve." There's a compilation step that adds friction to local development, and it's heavier at the start: configuring `tsconfig.json` to match what your project actually needs takes time, and if you inherit a messy one, untangling it is its own project. The type system itself stays manageable for most everyday code, but it has corners — conditional types, `infer`, higher-kinded patterns — where you end up writing type-level code nearly as complex as the runtime code it's describing. And when someone hits that wall and reaches for `any` to escape, you've lost the guarantee without the compiler noticing, which is the most insidious failure mode.
+
+The threshold that makes this worth it: is this code that multiple people will read and modify over months? That's the scenario TypeScript is built for. Most of its value is communication — to future you, to colleagues, to the IDE acting as a translator between what you wrote and what everything else expects. A one-off script you write alone and run twice gets almost none of that benefit while paying the full configuration cost. For that, JavaScript is fine and there's no honest reason to pretend otherwise.
